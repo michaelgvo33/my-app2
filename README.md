@@ -4,13 +4,11 @@
 
 ## Sobre o projeto
 
-O **My App** é um aplicativo desenvolvido com React Native e Expo para praticar e demonstrar diferentes tipos de navegação entre telas utilizando a biblioteca React Navigation.
+Aplicativo desenvolvido com React Native e Expo para praticar três tipos de navegação utilizando React Navigation.
 
-O projeto possui três tipos de navegação:
-
-- **Stack Navigation:** permite navegar entre as telas Home e Product, com a possibilidade de retornar à tela anterior.
-- **Bottom Tabs Navigation:** apresenta uma barra de navegação inferior com quatro opções: Início, Produtos, Perfil e Configurações. A aba Produtos possui um indicador numérico com o valor 3.
-- **Drawer Navigation:** disponibiliza um menu lateral com as opções Início, Produtos, Perfil e Configurações.
+- **Stack Navigation:** navegação entre Home e Product, com retorno à tela anterior.
+- **Bottom Tabs Navigation:** barra inferior com Início, Produtos, Perfil e Configurações. A aba Produtos apresenta um indicador vermelho com o número 3.
+- **Drawer Navigation:** menu lateral com as opções Início, Produtos, Perfil e Configurações.
 
 ## Tecnologias utilizadas
 
@@ -24,94 +22,62 @@ O projeto possui três tipos de navegação:
 
 ## Como executar o projeto
 
-### Pré-requisitos
+**Pré-requisitos:** Node.js e npm instalados.
 
-- Node.js instalado.
-- npm instalado.
-- Expo CLI utilizado por meio do `npx`.
+Clone o repositório:
 
-### Instalação
+```bash
+git clone https://github.com/michaelgvo33/my-app2.git
+```
 
-1. Clone este repositório:
+Entre na pasta:
 
-   ```bash
-   git clone https://github.com/michaelgvo33/my-app2
-   ```
+```bash
+cd my-app2
+```
 
-2. Entre na pasta do projeto:
+Instale as dependências:
 
-   ```bash
-   cd my-app
-   ```
+```bash
+npm install
+```
 
-3. Instale as dependências:
+Inicie o aplicativo:
 
-   ```bash
-   npm install
-   ```
-
-4. Inicie o Expo:
-
-   ```bash
-   npx expo start
-   ```
-
-5. Escolha a plataforma desejada para executar o aplicativo, como navegador ou emulador.
+```bash
+npx expo start
+```
 
 ## Modos de navegação
 
-O modo de navegação pode ser selecionado no arquivo `src/routes/index.jsx`, alterando o valor da constante `TIPO_DE_NAVEGACAO`.
+Para selecionar o modo, abra `src/routes/index.jsx` e altere `TIPO_DE_NAVEGACAO` para `'stack'`, `'bottom'` ou `'drawer'`.
 
 ### 1. Stack Navigation
 
-Navegação entre as telas Home e Product, utilizando o botão de adicionar para abrir a tela de produtos e a seta de retorno para voltar.
+Navegação entre Home e Product, com botão para abrir os produtos e seta para retornar.
 
 ![Stack Navigation]
 
 ### 2. Bottom Tabs Navigation
 
-Navegação por meio de uma barra inferior com quatro abas: Início, Produtos, Perfil e Configurações. A aba Produtos apresenta um indicador numérico vermelho com o valor 3.
+Barra inferior com quatro abas: Início, Produtos, Perfil e Configurações. Produtos exibe o indicador vermelho com o número 3.
 
 ![Bottom Tabs Navigation]
 
 ### 3. Drawer Navigation
 
-Navegação por menu lateral, acessível pelo botão de menu ou pelo gesto de deslizar, com as opções Início, Produtos, Perfil e Configurações.
+Menu lateral com as quatro opções de navegação.
 
 ![Drawer Navigation]
 
-## Organização do projeto
-
-```text
-my-app/
-├── src/
-│   ├── components/
-│   ├── routes/
-│   │   ├── index.jsx
-│   │   ├── StackRoutes.jsx
-│   │   ├── BottomRoutes.jsx
-│   │   └── DrawerRoutes.jsx
-│   ├── screens/
-│   │   ├── Home.jsx
-│   │   ├── Product.jsx
-│   │   ├── Profile.jsx
-│   │   └── Settings.jsx
-│   └── App.jsx
-├── screenshots/
-│   ├── stack.png
-│   ├── bottom-tabs.png
-│   └── drawer.png
-├── index.js
-├── package.json
-└── README.md
-```
+**Capturas de tela:** salve as imagens na pasta `screenshots`, usando exatamente os nomes `stack.png`, `bottom-tabs.png` e `drawer.png`.
 
 ## Desafio extra: navegação aninhada
 
-A navegação aninhada permite utilizar um navegador dentro de outro, combinando diferentes formas de navegação no mesmo aplicativo.
+A navegação aninhada permite utilizar um navegador dentro de outro. A implementação desse desafio não está documentada nesta versão; caso tenha sido realizada, acrescente as instruções específicas para ativá-la.
 
 ## Autor
 
-## Michael Gouveia de Oliveira
+**Michael Gouveia de Oliveira**
 
-Projeto desenvolvido para fins acadêmicos e de aprendizagem em desenvolvimento de aplicativos móveis com React Native, Expo e React Navigation.
+Projeto acadêmico para praticar navegação em aplicativos móveis com React Native, Expo e React Navigation.
