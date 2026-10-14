@@ -58,19 +58,21 @@ Navegação entre Home e Product, com botão para abrir os produtos e seta para 
 
 ![Stack Navigation]
 
+![Stack Navigation](screenshots/StackHome.png)
+
+![Product Screen](screenshots/StackProduct.png)
+
 ### 2. Bottom Tabs Navigation
 
 Barra inferior com quatro abas: Início, Produtos, Perfil e Configurações. Produtos exibe o indicador vermelho com o número 3.
 
-![Bottom Tabs Navigation]
+![Bottom Tabs Navigation](screenshots/StackBottomHome.png)
 
 ### 3. Drawer Navigation
 
 Menu lateral com as quatro opções de navegação.
 
-![Drawer Navigation]
-
-**Capturas de tela:** salve as imagens na pasta `screenshots`, usando exatamente os nomes `stack.png`, `bottom-tabs.png` e `drawer.png`.
+![Drawer Navigation](screenshots/DrawerHome2.png)
 
 ## Desafio extra: navegação aninhada
 
